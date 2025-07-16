@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: ringtone-pro-bot
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      apt-get update && apt-get install -y aria2c ffmpeg
+      pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4
