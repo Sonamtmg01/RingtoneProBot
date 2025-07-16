@@ -1,0 +1,4 @@
+python-telegram-bot
+youtubesearchpython
+yt-dlp
+# aria2c will be installed via render.yaml
